@@ -2,18 +2,18 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     */
+   // Define o método de teste
     public function test_the_application_returns_a_successful_response(): void
     {
+        // Faz uma requisição GET para a rota raiz
         $response = $this->get('/');
 
+          // Verifica se o status da resposta é 200 (OK)
         $response->assertStatus(200);
     }
 }

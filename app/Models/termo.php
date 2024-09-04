@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class termo extends Model
 {
+    public $timestamps = false;
     use HasFactory;
-    protected $table = "banco_de_dados_termo";
+    protected $table = 'termo';
     protected $fillable = ['palavras-do-termo'];
 }
