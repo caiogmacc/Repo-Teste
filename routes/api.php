@@ -14,3 +14,4 @@ Route::post('/envtermo', [termoController::class, 'store']);
 Route::apiResource('/termo', termoController::class);
 Route::get('/termo/supabase/{letra}', [termoController::class, 'supabase']);
 Route::patch('/termo/supabase/subs/{palavra}', [termoController::class, 'delpalavra']);
+Route::get('/termo/supabase/subs/{palavra}', [termoController::class, 'delpalavra']);
