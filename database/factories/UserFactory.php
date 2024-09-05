@@ -29,9 +29,9 @@ class UserFactory extends Factory
         ];
     }
 
-    /**
-     * Indicate that the model's email address should be unverified.
-     */
+    
+    //Indica que o endereço de e-mail do modelo não deve ser verificado.
+     
     public function unverified(): static
     {
         return $this->state(fn (array $attributes) => [
